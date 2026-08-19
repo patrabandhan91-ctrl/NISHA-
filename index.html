@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Nisha ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4ec, #fff8fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      color: #4a2632;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 25px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(120, 40, 70, 0.15);
+    }
+
+    .heart {
+      font-size: 55px;
+      animation: beat 1.4s infinite;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #c43d68;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #8d5868;
+      margin-bottom: 30px;
+    }
+
+    .letter {
+      text-align: left;
+      line-height: 1.8;
+      font-size: 18px;
+      background: #fff7f9;
+      padding: 25px;
+      border-radius: 18px;
+      border: 1px solid #ffd5e1;
+    }
+
+    .letter p {
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 25px;
+      font-style: italic;
+      color: #c43d68;
+    }
+
+    button {
+      margin-top: 25px;
+      border: none;
+      background: #d94f78;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.96);
+    }
+
+    #secret {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #c43d68;
+      line-height: 1.6;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.15);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="heart">❤️</div>
+
+    <h1>Nisha</h1>
+
+    <div class="subtitle">
+      A little letter written just for you
+    </div>
+
+    <div class="letter">
+
+      <p>Dear Nisha,</p>
+
+      <p>
+        কিছু মানুষ আমাদের জীবনে আসে,
+        আর অজান্তেই সবকিছু একটু সুন্দর করে দেয়।
+      </p>
+
+      <p>
+        তুমি আমার কাছে ঠিক তেমনই একজন।
+        তোমার হাসি, তোমার কথা, তোমার ছোট ছোট মুহূর্তগুলো
+        আমার কাছে অনেক বেশি special।
+      </p>
+
+      <p>
+        হয়তো সব কথা মুখে বলা যায় না,
+        তাই এই ছোট্ট website-টার মাধ্যমে
+        একটা কথা বলতে চেয়েছিলাম—
+      </p>
+
+      <p>
+        <strong>তুমি আমার কাছে সত্যিই খুব special। ❤️</strong>
+      </p>
+
+      <p class="signature">
+        — Someone who cares about you ❤️
+      </p>
+
+    </div>
+
+    <button onclick="showMessage()">
+      Click for a little surprise 💌
+    </button>
+
+    <div id="secret">
+      তুমি হাসলে পৃথিবীটা একটু বেশি সুন্দর লাগে। ❤️
+    </div>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
